@@ -77,8 +77,8 @@ body {
 	font-family: var(--font-family-1);
 	font-style: normal;
 	color: var(--body-color);
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: bolder;
     line-height: 2.8rem;
 	-moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
@@ -212,6 +212,43 @@ select:focus {
   box-shadow: inherit;
 }
 
+
+.title7 {
+  text-align: center;
+  padding-bottom: calc(20px + (42 - 20) * ((100vw - 320px) / (1920 - 320)));
+  background-color: $white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: calc(5px + (15 - 5) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1;
+  }
+
+  .line {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: $theme-color2;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -4px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+      border-radius: 50%;
+      background-color: $theme-color1;
+      animation: moveboll 15s linear infinite alternate-reverse;
+    }
+  }
+}
+
+
 /*-------------------------------------------------------
 2. Theme default css 
 ---------------------------------------------------------*/
@@ -223,7 +260,7 @@ select:focus {
     width: 100%;
     height: 100%;
     z-index: 999999;
-    background: url(assets/img/logo/pre-loader.gif) center no-repeat var(--white-color);
+    background: url(assets/img/logo/loader.gif) center no-repeat var(--white-color);
     text-align: center;
 }
 
@@ -282,12 +319,14 @@ select:focus {
 
 .wh-info .theme-btn{
 	padding: 0.6rem;
+    position: absolute;
+
 }
 
 .theme-btn {
 	padding: 1.3rem 2.4rem;
     background: var(--theme-color);
-    border-radius: 5px;
+    border-radius: 25px;
     color: var(--white-color);
     text-transform: capitalize;
 	font-weight: 500;
@@ -950,6 +989,13 @@ select:focus {
 6.About css
 --------------------------------------------------------- */
 
+#about .container{
+    max-width: 1400px !important;
+
+}
+
+
+
 .about-wrapper .about-left .about-left-img {
     height: 100%;
 	position: relative;
@@ -1375,6 +1421,11 @@ select:focus {
 	transition: .5s ease;
 	border-top: 2px solid var(--theme-color);
 	box-shadow: 0px 19px 68px 0px rgba(0, 0, 0, 45);
+}
+
+.cloth{
+    padding-bottom: 20px !important;
+    grid-template-columns: 1fr !important;
 }
 
 .wh-wrapper .wh-box .wh-info {
