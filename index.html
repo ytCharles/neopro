@@ -61,7 +61,7 @@
 						</div>
 					</div>
 					<div class="container">
-						<a class="navbar-brand" href="index-1.html">
+						<a class="navbar-brand" href="index.html">
 							<img src="assets/img/logo/logo.png" class="logo-display" alt="thumb">
 							<img src="assets/img/logo/logo.png" class="logo-scrolled" alt="thumb">
 						</a>
@@ -88,7 +88,7 @@
 							</ul>
 							<div class="header-serarch-btn">
 								<i class="fas fa-search"></i>
-								<a href="login.html" class="header-btn">Login || Register <i class="fas fa-arrow-right"></i></a>
+								<a href="javascript:void(0)" class="header-btn" onclick="openAccount()">Login || Register <i class="fas fa-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -123,6 +123,17 @@
 							<p>
 								Our aim is to offer services in line with today's societal needs.
 							</p>
+<div class="project-wrapper">
+				<div class="project-box">
+					<div class="gif">
+						<img src="assets/img/video/neopro.gif" alt="thumb">
+					</div>
+						<div class="project-info">
+							<span>NeoPro Solutions</span>
+								<h4>Award-winning work</h4>
+						</div>
+				</div>
+</div>
 						</div>
 					</div>
 						<div class="benefit-opt benefit-right grid-2">
@@ -136,13 +147,20 @@
 							</div>
 
 							<div class="benefit-opt-box">
-								<img src="assets/img/benefit/benefit-icon-2.png" alt="thumb">
-								<h4>Reliability</h4>
-								<p>
-									Whenever we are involved, you can rest, with the assuarance of everything is in good hands. 
-									We make you achieve your goal in a smooth, satisfying process without hitches along the way.
-								</p>
+								<div class="benefit-btm-box">
+						<div class="benefit-btm-icon">
+							<i class="fas fa-headset"></i>
+						</div>
+						<div class="benefit-btm-info">
+							<h4>Customer Support</h4>
+							<p>
+								We listen, keenly. Contact us, via our 24/7/365 Customer Care Centre.
+							</p>
+						</div>
+					</div>
 							</div>
+
+
 
 							<div class="benefit-opt-box">
 								<div class="benefit-btm-box">
@@ -160,18 +178,14 @@
 						</div>
 
 							<div class="benefit-opt-box">
-								<div class="benefit-btm-box">
-						<div class="benefit-btm-icon">
-							<i class="fas fa-headset"></i>
-						</div>
-						<div class="benefit-btm-info">
-							<h4>Customer Support</h4>
-							<p>
-								We listen, keenly. Contact us, via our 24/7/365 Customer Care Centre.
-							</p>
-						</div>
-					</div>
+								<img src="assets/img/benefit/benefit-icon-2.png" alt="thumb">
+								<h4>Reliability</h4>
+								<p>
+									Whenever we are involved, you can rest, with the assuarance of everything is in good hands. 
+									We make you achieve your goal in a smooth, satisfying process without hitches along the way.
+								</p>
 							</div>
+
 
 						</div>
 					</div>
@@ -287,7 +301,7 @@
 							<p>
 								Our team of qualified and experienced freelance writers will deliver timely and quality work. Our diversity spans from academic writing, content creation, blogging etc. 
 								We also offer training on various online gigs available.<br>
-							<a href="https://neopro.talentlms.com/" class="theme-btn">More Information</a> 
+							<a href="writing.html" class="theme-btn">More Information</a> 
 							</p>
 						</div>
 					</div>
@@ -676,7 +690,7 @@
 		
 		<!-- Start Video
 		============================================= -->
-		<div id="project" class="video-area de-padding" data-background="assets/img/video/cta-bg.jpg">
+		<div id="project" class="video-area de-padding" data-background="assets/img/video/neopro.gif">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-8 offset-xl-2">
@@ -689,7 +703,7 @@
 				<div class="video-wrapper text-center">
 					<a href="#" class="video-play-btn"><i class="fas fa-play"></i></a>
 					<div class="vid-btn">
-						<a href="#" class="theme-btn">More Information <i class="fas fa-arrow-right"></i></a>
+						<a href="javascript:void(0)" class="theme-btn" onclick="openAccount()">More Information <i class="fas fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -1112,11 +1126,45 @@
 	============================================= -->
 	<a href="#bdy" id="scrtop" class="smooth-menu"><i class="ti-arrow-up"></i></a>
 	<!-- End Scroll top-->
-	
+
+
+	<!-- Login form -->
+<div id="myAccount" class="add_to_cart right account-bar">
+  <a href="javascript:void(0)" class="overlay" onclick="closeAccount()"></a>
+  <div class="cart-inner">
+    <div class="cart_top">
+      <h3>MY ACCOUNT</h3>
+      <div class="close-cart">
+        <a href="javascript:void(0)" onclick="closeAccount()">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <form class="theme-form">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter Your Email Address" required="">
+      </div>
+      <div class="form-group">
+        <label for="review">Password</label>
+        <input type="password" class="form-control" id="review" placeholder="Enter your Password" required="">
+      </div>
+      <div class="form-group">
+        <a href="javascript:void(0)" class="btn btn-solid btn-md btn-block theme-btn ">Login</a>
+      </div>
+      <div class="accout-fwd">
+        <a href="forget-pwd.html" class="btn btn-solid btn-md btn-block logintheme-btn theme-btn">Forgot Password?</a>
+        <a href="register.html">No Account? <span class="btn btn-solid btn-md btn-block logintheme-btn theme-btn">Signup Now</span></a>
+      </div>
+    </form>
+  </div>
+</div>
+	<!-- login form End -->
 	
   	<!-- jQuery Frameworks 
     ============================================= -->
 	
+	<script src="assets/js/script.js"></script>
 	<script src=" assets/js/jquery-1.12.4.min.js"></script>
     <script src=" assets/js/bootstrap.min.js"></script>
     <script src=" assets/js/popper.min.js"></script>
@@ -1140,6 +1188,10 @@
     <script src=" assets/js/bsnav.min.js"></script>
     <script src=" assets/js/jquery.easypiechart.js"></script>
     <script src=" assets/js/main.js"></script>
+
+
+
+
 	
 </body>
 
